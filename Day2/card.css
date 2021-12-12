@@ -1,0 +1,38 @@
+.card{
+    height: 500px;
+    width: 300px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.card-front, .card-back{
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s;
+    display: inline-block;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card-front{
+    background-color: yellow;
+    left: 0;
+    top: 0;
+
+}
+.card-back{
+    background: green;
+    left: 0;
+    top: 0;
+    transform: rotateY(180deg);
+    
+}
+
+
+.card:hover .card-front{
+    transform: rotateY(180deg);
+}
+
+.card:hover .card-back{
+    transform: rotateY(360deg);
+}

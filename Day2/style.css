@@ -1,0 +1,34 @@
+/* Element Selector */
+div {
+    border: 6px dashed green;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: bisque;
+}
+
+/* Class Selector ( it starts with "." ) */
+.css{
+    background-color: aquamarine;
+}
+
+/* Children Selector */
+.css li{
+    font-size: 30px;
+}
+
+/* Direct Children Selector */
+.css h3{
+    background-color: red;
+}
+.css h3 > div{
+    background-color: violet;
+}
+
+/* Id Selector */
+#css{
+    background-color: blue;
+}
+
+
