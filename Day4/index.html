@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>Day 4 - Small Project - TODO Applicaiton</title>
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <body>
+        <div id="todo-app">
+            <!-- This section for heading -->
+            <section id="heading">
+                <h1>TODO List</h1>
+            </section>
+            <!-- This section is to add new task on the list -->
+            <section id="new-task">
+                <input type="text" placeholder="Enter task here" onchange="handleChangeInput(this)" >
+                <button> Add </button>
+            </section>
+
+    
+            <!-- This section for the todo list -->
+            <section id="todo-list">
+                <ol>
+                    <li>Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li>
+                    <li>Task 4</li>
+                    <li>Task 5</li>
+                </ol>
+            </section>
+        </div>
+
+
+        <script>
+            const newTask = document.getElementById("new-task")
+            console.log(newTask)
+            const button = newTask.getElementsByTagName("button")[0]
+            
+            button.addEventListener("click", function(event){
+                console.log("The button is clicked")
+            })
+
+            function handleChangeInput(event){
+                console.log("The Input is changed to ", event.value)
+            }
+
+        </script>
+    </body>
+</html>

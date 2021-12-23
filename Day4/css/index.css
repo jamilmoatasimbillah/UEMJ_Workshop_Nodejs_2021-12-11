@@ -1,0 +1,58 @@
+* {
+    padding: 0;
+    margin: 0;   
+}
+
+
+html{
+    font-size: 66.7%;
+}
+
+body{
+    background-color: #F0F0F0;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#todo-app{
+    display: inline-block;
+    margin: auto;
+    padding: 40px 80px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px black;
+}
+
+#heading{
+    text-align: center;
+    font-size: 3.2rem;
+}
+
+#new-task{
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 2rem;
+    display: flex;
+}
+
+#new-task input{
+    padding: 5px;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #0B0B0B;
+    outline: none;
+    flex: 1;
+    /* width: 100%; */
+}
+
+#new-task button{
+    background-color: #D7E9F7;
+    padding: 5px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    
+}
+
+#todo-list{
+    width: 50vw;
+    font-size: 2rem;
+}
