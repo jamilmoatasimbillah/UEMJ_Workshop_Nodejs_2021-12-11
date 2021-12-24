@@ -56,3 +56,7 @@ body{
     width: 50vw;
     font-size: 2rem;
 }
+
+#todo-list .completed {
+    text-decoration: line-through;
+}
