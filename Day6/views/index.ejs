@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Day 6 - Small Project - RESTful TODO Applicaiton</title>
+        <link rel="stylesheet" href="./css/index.css">
+    </head>
+    <body>
+        <div id="todo-app">
+            <!-- This section for heading -->
+            <section id="heading">
+                <h1>TODO List</h1>
+            </section>
+            <!-- This section is to add new task on the list -->
+            <section id="new-task">
+                <input type="text" placeholder="Enter task here"  onchange="handleChangeInput(this)" >
+                <button> Add </button>
+            </section>
+
+    
+            <!-- This section for the todo list -->
+            <section id="todo-list">
+                <ol>
+                    <% mytodos.forEach( (todo, index) => { %>
+                       <li <% if (todo.isCompleted) { %> class="completed" <% } %> onclick="toggleCompleted( <%= index %> )" >  
+                            <%= todo.task %>  
+                            <button onclick="handleDeleteTask( <%= index %> )">Delete</button>
+                        </li> 
+                    <% }); %>
+                </ol>
+            </section>
+        </div>
+
+
+        <script src="js/index.js"></script>
+    </body>
+</html>
